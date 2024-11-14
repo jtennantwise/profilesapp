@@ -46,9 +46,9 @@ export default function App() {
       width="70%"
       margin="0 auto"
     >
-      <Heading level={1}>My Profile</Heading>
+      <Heading level={1}>Upload CSV Data</Heading>
    <FileUploader
-      acceptedFileTypes={['image/*']}
+      acceptedFileTypes={['.csv']}
       path="public/"
       maxFileCount={1}
       isResumable

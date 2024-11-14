@@ -27,7 +27,8 @@ const client = generateClient({
 export default function App() {
   const [userprofiles, setUserProfiles] = useState([]);
   const { signOut } = useAuthenticator((context) => [context.user]);
-
+//  const [file, setFile] = React.useState();
+ 
   useEffect(() => {
     fetchUserProfile();
   }, []);
@@ -47,13 +48,13 @@ export default function App() {
       margin="0 auto"
     >
       <Heading level={1}>Upload CSV Data</Heading>
-   <FileUploader
-      acceptedFileTypes={['.csv']}
-      path="public/"
-      maxFileCount={1}
-      isResumable
-    />
-      <Divider />
+    <Divider />
+      <FileUploader
+         acceptedFileTypes={['.csv']}
+         path='csv-submissions/'
+	 maxFileCount={1}
+         isResumable
+      />
 
       <Grid
         margin="3rem 0"

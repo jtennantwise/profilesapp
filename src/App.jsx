@@ -47,7 +47,7 @@ export default function App() {
       width="70%"
       margin="0 auto"
     >
-      <Heading level={1}>Upload CSV Data</Heading>
+      <Heading level={3}>Upload CSV Data</Heading>
     <Divider />
       <FileUploader
          acceptedFileTypes={['.csv']}
